@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		2C6A4DB725A74E57008E544A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DB525A74E57008E544A /* Main.storyboard */; };
 		2C6A4DB925A74E60008E544A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DB825A74E60008E544A /* Assets.xcassets */; };
 		2C6A4DBC25A74E60008E544A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DBA25A74E60008E544A /* LaunchScreen.storyboard */; };
+		2C6A4DD025A750F5008E544A /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCB25A750F4008E544A /* 1.json */; };
+		2C6A4DD125A750F5008E544A /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCC25A750F5008E544A /* 2.json */; };
+		2C6A4DD225A750F5008E544A /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCD25A750F5008E544A /* 4.json */; };
+		2C6A4DD325A750F5008E544A /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCE25A750F5008E544A /* 5.json */; };
+		2C6A4DD425A750F5008E544A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCF25A750F5008E544A /* 3.json */; };
 		32882F6A816920F3440B9A07 /* Pods_ApiSample2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75ECB04D63BAB97CA67DB05 /* Pods_ApiSample2.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		2C6A4DB825A74E60008E544A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6A4DBB25A74E60008E544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A4DBD25A74E60008E544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6A4DCB25A750F4008E544A /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		2C6A4DCC25A750F5008E544A /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		2C6A4DCD25A750F5008E544A /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		2C6A4DCE25A750F5008E544A /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		2C6A4DCF25A750F5008E544A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		A8FB88BFBD3848234FA61055 /* Pods-ApiSample2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSample2.release.xcconfig"; path = "Target Support Files/Pods-ApiSample2/Pods-ApiSample2.release.xcconfig"; sourceTree = "<group>"; };
 		CBB374092D4945CF08C78649 /* Pods-ApiSample2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSample2.debug.xcconfig"; path = "Target Support Files/Pods-ApiSample2/Pods-ApiSample2.debug.xcconfig"; sourceTree = "<group>"; };
 		E75ECB04D63BAB97CA67DB05 /* Pods_ApiSample2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSample2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +58,6 @@
 				CBB374092D4945CF08C78649 /* Pods-ApiSample2.debug.xcconfig */,
 				A8FB88BFBD3848234FA61055 /* Pods-ApiSample2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +93,11 @@
 				2C6A4DAF25A74E57008E544A /* AppDelegate.swift */,
 				2C6A4DB125A74E57008E544A /* SceneDelegate.swift */,
 				2C6A4DB325A74E57008E544A /* ViewController.swift */,
+				2C6A4DCB25A750F4008E544A /* 1.json */,
+				2C6A4DCC25A750F5008E544A /* 2.json */,
+				2C6A4DCF25A750F5008E544A /* 3.json */,
+				2C6A4DCD25A750F5008E544A /* 4.json */,
+				2C6A4DCE25A750F5008E544A /* 5.json */,
 				2C6A4DB525A74E57008E544A /* Main.storyboard */,
 				2C6A4DB825A74E60008E544A /* Assets.xcassets */,
 				2C6A4DBA25A74E60008E544A /* LaunchScreen.storyboard */,
@@ -151,9 +165,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6A4DD125A750F5008E544A /* 2.json in Resources */,
+				2C6A4DD425A750F5008E544A /* 3.json in Resources */,
+				2C6A4DD325A750F5008E544A /* 5.json in Resources */,
 				2C6A4DBC25A74E60008E544A /* LaunchScreen.storyboard in Resources */,
 				2C6A4DB925A74E60008E544A /* Assets.xcassets in Resources */,
 				2C6A4DB725A74E57008E544A /* Main.storyboard in Resources */,
+				2C6A4DD225A750F5008E544A /* 4.json in Resources */,
+				2C6A4DD025A750F5008E544A /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
