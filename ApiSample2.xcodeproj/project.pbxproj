@@ -90,20 +90,44 @@
 		2C6A4DAE25A74E57008E544A /* ApiSample2 */ = {
 			isa = PBXGroup;
 			children = (
-				2C6A4DAF25A74E57008E544A /* AppDelegate.swift */,
-				2C6A4DB125A74E57008E544A /* SceneDelegate.swift */,
-				2C6A4DB325A74E57008E544A /* ViewController.swift */,
+				2C6A4DD625A75139008E544A /* Model */,
+				2C6A4DD725A75140008E544A /* View */,
+				2C6A4DD825A75149008E544A /* Controller */,
 				2C6A4DCB25A750F4008E544A /* 1.json */,
 				2C6A4DCC25A750F5008E544A /* 2.json */,
 				2C6A4DCF25A750F5008E544A /* 3.json */,
 				2C6A4DCD25A750F5008E544A /* 4.json */,
 				2C6A4DCE25A750F5008E544A /* 5.json */,
-				2C6A4DB525A74E57008E544A /* Main.storyboard */,
-				2C6A4DB825A74E60008E544A /* Assets.xcassets */,
-				2C6A4DBA25A74E60008E544A /* LaunchScreen.storyboard */,
 				2C6A4DBD25A74E60008E544A /* Info.plist */,
 			);
 			path = ApiSample2;
+			sourceTree = "<group>";
+		};
+		2C6A4DD625A75139008E544A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C6A4DD725A75140008E544A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C6A4DB525A74E57008E544A /* Main.storyboard */,
+				2C6A4DB825A74E60008E544A /* Assets.xcassets */,
+				2C6A4DBA25A74E60008E544A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6A4DD825A75149008E544A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C6A4DAF25A74E57008E544A /* AppDelegate.swift */,
+				2C6A4DB125A74E57008E544A /* SceneDelegate.swift */,
+				2C6A4DB325A74E57008E544A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
