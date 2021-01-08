@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="1892.753623188406" y="87.723214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="cBI-vp-6fo">
             <objects>
-                <viewController id="1I6-qC-1ci" sceneMemberID="viewController">
+                <viewController id="1I6-qC-1ci" customClass="BaseViewController" customModule="ApiSample2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E9T-w7-OVv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

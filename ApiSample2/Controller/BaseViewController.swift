@@ -6,13 +6,43 @@
 //
 
 import UIKit
+import SegementSlide
 
-class BaseViewController: UIViewController {
+class BaseViewController: SegementSlideDefaultViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        reloadData()
+        defaultSelectedIndex = 0
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func segementSlideHeaderView() -> UIView? {
+        let headerView = UIImageView()
+        // タップなどのイベントを有効にするかどうかのプロパティ
+        headerView.isUserInteractionEnabled = true
+        headerView.contentMode = .scaleAspectFill
+        headerView.image = UIImage(named: "header")
+        /**このプロパティはAuto Layout以前に使われていた、Autosizingのレイアウトの仕組みをAuto Layoutに変換するかどうかを設定するフラグ
+           デフォルトではオンになっていて、オンのままだと期待通りのAuto Layout設定ができない場合があるのでオフにする。
+         */
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let headerHeight : CGFloat
+        if #available(iOS 11.0, *) {
+            headerHeight = view.bounds.height/4 + view.safeAreaInsets.top
+        } else {
+            headerHeight = view.bounds.height/4 + topLayoutGuide.length
+        }
+        
+        headerView.heightAnchor.constraint(equalToConstant: headerHeight).isActive = true
+        
+        return headerView
     }
     
 
