@@ -19,6 +19,7 @@
 		2C6A4DD425A750F5008E544A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DCF25A750F5008E544A /* 3.json */; };
 		2C6A4DDB25A7E47F008E544A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A4DDA25A7E47F008E544A /* IntroViewController.swift */; };
 		2C6A4DDE25A8BD40008E544A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A4DDD25A8BD40008E544A /* LoginViewController.swift */; };
+		2C6A4DE325A8C674008E544A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A4DE225A8C674008E544A /* BaseViewController.swift */; };
 		32882F6A816920F3440B9A07 /* Pods_ApiSample2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75ECB04D63BAB97CA67DB05 /* Pods_ApiSample2.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		2C6A4DDA25A7E47F008E544A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		2C6A4DDD25A8BD40008E544A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C6A4DE025A8C4ED008E544A /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		2C6A4DE225A8C674008E544A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8FB88BFBD3848234FA61055 /* Pods-ApiSample2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSample2.release.xcconfig"; path = "Target Support Files/Pods-ApiSample2/Pods-ApiSample2.release.xcconfig"; sourceTree = "<group>"; };
 		CBB374092D4945CF08C78649 /* Pods-ApiSample2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSample2.debug.xcconfig"; path = "Target Support Files/Pods-ApiSample2/Pods-ApiSample2.debug.xcconfig"; sourceTree = "<group>"; };
 		E75ECB04D63BAB97CA67DB05 /* Pods_ApiSample2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSample2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				2C6A4DB125A74E57008E544A /* SceneDelegate.swift */,
 				2C6A4DDA25A7E47F008E544A /* IntroViewController.swift */,
 				2C6A4DDD25A8BD40008E544A /* LoginViewController.swift */,
+				2C6A4DE225A8C674008E544A /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6A4DE325A8C674008E544A /* BaseViewController.swift in Sources */,
 				2C6A4DDE25A8BD40008E544A /* LoginViewController.swift in Sources */,
 				2C6A4DDB25A7E47F008E544A /* IntroViewController.swift in Sources */,
 				2C6A4DB025A74E57008E544A /* AppDelegate.swift in Sources */,
