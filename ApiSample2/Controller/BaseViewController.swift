@@ -45,6 +45,19 @@ class BaseViewController: SegementSlideDefaultViewController {
         return headerView
     }
     
+    override var titlesInSwitcher: [String] {
+        return ["tab1", "tab2", "tab3", "tab4", "tab5", "tab6"]
+    }
+    
+    override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
+        switch index {
+        case 0:
+            return
+        default:
+            <#code#>
+        }
+    }
+    
 
     /*
     // MARK: - Navigation
