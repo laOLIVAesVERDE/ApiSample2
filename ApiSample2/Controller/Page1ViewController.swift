@@ -55,12 +55,15 @@ class Page1ViewController: UITableViewController, SegementSlideContentScrollView
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         cell.backgroundColor = .clear
-        
-        
-
-        // Configure the cell...
+        let newsItems = self.newsItemsArray[indexPath.row]
+        cell.textLabel?.text = newsItems.title
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
+        cell.textLabel?.textColor = .white
+        cell.textLabel?.numberOfLines = 3
+        cell.detailTextLabel?.text = newsItems.url
+        cell.detailTextLabel?.textColor = .white
 
         return cell
     }
@@ -68,7 +71,41 @@ class Page1ViewController: UITableViewController, SegementSlideContentScrollView
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.height/5
     }
-
+    
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+        currentElementName = nil
+        if elementName == "item" {
+            self.newsItemsArray.append(NewsItems())
+        } else {
+            currentElementName = elementName
+        }
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        if self.newsItemsArray.count > 0 {
+            let lastItem = self.newsItemsArray[self.newsItemsArray.count - 1]
+            switch self.currentElementName {
+            case "title" :
+                lastItem.title = string
+            
+            case "link" :
+                lastItem.url = string
+            
+            case "pubDate" :
+                lastItem.pubDate = string
+            default:
+                break
+            }
+        }
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        self.currentElementName = nil
+    }
+    
+    func parserDidEndDocument(_ parser: XMLParser) {
+        self.tableView.reloadData()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
