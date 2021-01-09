@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2C32C52A25A9D2F600EC6C0B /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C52925A9D2F600EC6C0B /* Page1ViewController.swift */; };
 		2C32C52D25A9DF0700EC6C0B /* NewsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C52C25A9DF0700EC6C0B /* NewsItems.swift */; };
+		2C32C53025A9EAB900EC6C0B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C52F25A9EAB900EC6C0B /* WebViewController.swift */; };
+		2C32C53725A9ED7100EC6C0B /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C53625A9ED7100EC6C0B /* Page2ViewController.swift */; };
+		2C32C53A25A9EE3300EC6C0B /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C53925A9EE3300EC6C0B /* Page3ViewController.swift */; };
+		2C32C53D25A9EE5E00EC6C0B /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C53C25A9EE5E00EC6C0B /* Page4ViewController.swift */; };
+		2C32C54025A9EF5C00EC6C0B /* Page5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C53F25A9EF5C00EC6C0B /* Page5ViewController.swift */; };
+		2C32C54325A9EF8B00EC6C0B /* Page6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32C54225A9EF8B00EC6C0B /* Page6ViewController.swift */; };
 		2C6A4DB025A74E57008E544A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A4DAF25A74E57008E544A /* AppDelegate.swift */; };
 		2C6A4DB225A74E57008E544A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A4DB125A74E57008E544A /* SceneDelegate.swift */; };
 		2C6A4DB725A74E57008E544A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A4DB525A74E57008E544A /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 /* Begin PBXFileReference section */
 		2C32C52925A9D2F600EC6C0B /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		2C32C52C25A9DF0700EC6C0B /* NewsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItems.swift; sourceTree = "<group>"; };
+		2C32C52F25A9EAB900EC6C0B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2C32C53625A9ED7100EC6C0B /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		2C32C53925A9EE3300EC6C0B /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		2C32C53C25A9EE5E00EC6C0B /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
+		2C32C53F25A9EF5C00EC6C0B /* Page5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5ViewController.swift; sourceTree = "<group>"; };
+		2C32C54225A9EF8B00EC6C0B /* Page6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page6ViewController.swift; sourceTree = "<group>"; };
 		2C6A4DAC25A74E57008E544A /* ApiSample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6A4DAF25A74E57008E544A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6A4DB125A74E57008E544A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,19 @@
 				E75ECB04D63BAB97CA67DB05 /* Pods_ApiSample2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C32C54525A9F0C600EC6C0B /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				2C32C52925A9D2F600EC6C0B /* Page1ViewController.swift */,
+				2C32C53625A9ED7100EC6C0B /* Page2ViewController.swift */,
+				2C32C53925A9EE3300EC6C0B /* Page3ViewController.swift */,
+				2C32C53C25A9EE5E00EC6C0B /* Page4ViewController.swift */,
+				2C32C53F25A9EF5C00EC6C0B /* Page5ViewController.swift */,
+				2C32C54225A9EF8B00EC6C0B /* Page6ViewController.swift */,
+			);
+			path = pages;
 			sourceTree = "<group>";
 		};
 		2C6A4DA325A74E57008E544A = {
@@ -134,12 +159,13 @@
 		2C6A4DD825A75149008E544A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C32C54525A9F0C600EC6C0B /* pages */,
 				2C6A4DAF25A74E57008E544A /* AppDelegate.swift */,
 				2C6A4DB125A74E57008E544A /* SceneDelegate.swift */,
 				2C6A4DDA25A7E47F008E544A /* IntroViewController.swift */,
 				2C6A4DDD25A8BD40008E544A /* LoginViewController.swift */,
 				2C6A4DE225A8C674008E544A /* BaseViewController.swift */,
-				2C32C52925A9D2F600EC6C0B /* Page1ViewController.swift */,
+				2C32C52F25A9EAB900EC6C0B /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,10 +292,16 @@
 				2C6A4DE325A8C674008E544A /* BaseViewController.swift in Sources */,
 				2C32C52D25A9DF0700EC6C0B /* NewsItems.swift in Sources */,
 				2C6A4DDE25A8BD40008E544A /* LoginViewController.swift in Sources */,
+				2C32C53A25A9EE3300EC6C0B /* Page3ViewController.swift in Sources */,
 				2C6A4DDB25A7E47F008E544A /* IntroViewController.swift in Sources */,
+				2C32C54025A9EF5C00EC6C0B /* Page5ViewController.swift in Sources */,
+				2C32C53725A9ED7100EC6C0B /* Page2ViewController.swift in Sources */,
 				2C32C52A25A9D2F600EC6C0B /* Page1ViewController.swift in Sources */,
 				2C6A4DB025A74E57008E544A /* AppDelegate.swift in Sources */,
+				2C32C53D25A9EE5E00EC6C0B /* Page4ViewController.swift in Sources */,
+				2C32C54325A9EF8B00EC6C0B /* Page6ViewController.swift in Sources */,
 				2C6A4DB225A74E57008E544A /* SceneDelegate.swift in Sources */,
+				2C32C53025A9EAB900EC6C0B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

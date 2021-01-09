@@ -72,6 +72,14 @@ class Page1ViewController: UITableViewController, SegementSlideContentScrollView
         return view.frame.size.height/5
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let webViewController = WebViewController()
+        webViewController.modalTransitionStyle = .crossDissolve
+        let newsItem = newsItemsArray[indexPath.row]
+        UserDefaults.standard.set(newsItem.url, forKey: "url")
+        present(webViewController, animated: true, completion: nil)
+    }
+    
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         currentElementName = nil
         if elementName == "item" {
